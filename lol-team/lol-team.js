@@ -220,7 +220,7 @@ importBtn.addEventListener('click', () => {
             }
         }
     });
-    for(let i=0; i<pArray.length; i++){
+    for(let i=0; i<pArray.length && i<10; i++){
         nameInputEl = document.getElementById(`mix_players_${i}_name`);
         nameInputEl.value = pArray[i];   
         setTierByInputChange(nameInputEl);
